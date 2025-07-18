@@ -1,86 +1,72 @@
-# File Compression
+# 📦 File Compression Tool
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/ayonious/File-Compression/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ayonious/File-Compression/tree/master)
-[![codecov](https://codecov.io/gh/ayonious/File-Compression/branch/master/graph/badge.svg)](https://codecov.io/gh/ayonious/File-Compression)
-[![GitHub stars](https://img.shields.io/github/stars/ayonious/File-Compression?style=social)](https://github.com/ayonious/File-Compression/stargazers)
+A simple GUI-based file compression and decompression tool using **Huffman Encoding**, developed in **Java** with **Swing** for the user interface.
 
-A File Compression software that helps zip/Unzip files using these 2 algorihtms:
+## 🚀 Features
 
-1. Huffmans Code
-2. Lempel-Ziv-Wells algorithm
+- 🔧 Compress and decompress text files using Huffman encoding algorithm
+- 🖥️ User-friendly interface built with Java Swing
+- 💾 File chooser for selecting files
+- 🛠️ Basic error handling (invalid files, file not found, etc.)
+- 📂 Output saved in the same directory with `.compressed` or `.decompressed` suffix
 
-# About Huffmans Code
+## 🧠 Concepts Used
 
-The Huffmans algo creates a 1-1 mapping for each byte of the input file 
-and replaces each byte with the mapped bit sequence. For this you need 
-to store a dictionary that describes each 1-1 mapping of input byte and
-binary sequence.(which needs extraspace)
+- **Data Structures:** Priority Queue, HashMap, Tree
+- **Algorithms:** Huffman Tree Construction, Tree Traversal, Bit Manipulation
+- **Core Java Concepts:** File I/O, Exception Handling, GUI Programming with Swing
 
-# About Lempel-Ziv-Wells
-
-Unlike Huffmans code LZW dont need an extra dictionary to be saved. Also
-LZW does not create a mapping to byte to bin sequence. It creates mapping
-of multiple byte to binary sequence.
-
-## Installation
-
-### Prerequisites
-- Java 21 or higher
-- Maven (for building)
-
-<details>
-<summary> Installing Maven (click to expand)</summary>
-
-On macOS:
-```bash
-brew install maven
-```
-
-On Linux:
-```bash
-sudo apt-get install maven  # For Debian/Ubuntu
-sudo dnf install maven     # For Fedora
-```
-
-Verify installation:
-```bash
-mvn -version
-```
-</details>
-
-## Building and Running
-
-### Directly Run the jar file
-I have included the already build jar file. You can run it simply if you dont want to build
-```bash
-java -jar FileCompression.jar
-```
-
-
-### Build and Run the project Using Maven
-```bash
-mvn clean package
-mvn test
-mvn exec:java
-```
-
-### Using JAR directly
-After building with Maven, you can run the JAR:
-```bash
-java -jar target/file-compression-1.0-SNAPSHOT-jar-with-dependencies.jar
-```
+## 🖼️ UI Preview
 
 ![Outlook](/git_resource/outlook.png?raw=true "File Compression GUI")
 
-## Zip a file
-file>open>click zip>the zipped file will be created on the same folder
+
+## 📦 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Anjanisom0213/File-Compression.git
+2. Open in your preferred Java IDE (IntelliJ IDEA, Eclipse, etc.)
+
+3. Compile and run the AppFrame.java file
+
+4. Use the GUI to:
+
+  ✅ Compress a file
+
+  ✅ Decompress a previously compressed file
+
+  Open in your preferred Java IDE (IntelliJ IDEA, Eclipse, etc.)
+
+## 📁 File Structure
+
+📂 File-Compression
+ ┣ 📄 AppFrame.java          # Main GUI interface
+ ┣ 📄 Compressor.java        # Compression logic using Huffman encoding
+ ┣ 📄 Decompressor.java      # Decompression logic
+ ┗ 📄 README.md              # Project description
+
+## 🛡️ Limitations
+Currently supports only text files (.txt)
+
+No drag-and-drop or multiple file selection (planned in future versions)
+
+## 💡 Future Enhancements
+ - Modern UI with JavaFX or flat design
+
+ - Show compression statistics (file size before/after)
+
+ - Drag and drop file support
+
+ - Batch compression
+
+## 🧑‍💻 Author
+Anjani
+📧 anjanisom0213@gmail.com
+🔗 GitHub
+
+##🌟 Support
+If you like this project, feel free to ⭐ the repository and share your feedback!
 
 
-## Unzip a file
-file>open>click unzip>the unzipped file will be created on the same folder
 
-
-## Testing environment:
-
-I tested this project in:
-Linux Mint, OS X El Capitan (version 10.11.6), macOS Sonoma
