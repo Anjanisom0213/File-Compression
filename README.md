@@ -62,10 +62,12 @@ No drag-and-drop or multiple file selection (planned in future versions)
 
 ## 🧑‍💻 Author
 Anjani
-📧 anjanisom0213@gmail.com
-🔗 GitHub
+📧 anjanisom1302@gmail.com
+🔗 GitHub - https://github.com/Anjanisom0213 
+Linkdin -https://www.linkedin.com/in/anjanisom 
 
-##🌟 Support
+## 🌟 Support
+
 If you like this project, feel free to ⭐ the repository and share your feedback!
 
 
