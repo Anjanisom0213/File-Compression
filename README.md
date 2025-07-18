@@ -32,9 +32,9 @@ A simple GUI-based file compression and decompression tool using **Huffman Encod
 
 4. Use the GUI to:
 
-  ✅ Compress a file
+     ✅ Compress a file
 
-  ✅ Decompress a previously compressed file
+     ✅ Decompress a previously compressed file
 
   Open in your preferred Java IDE (IntelliJ IDEA, Eclipse, etc.)
 
